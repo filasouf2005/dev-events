@@ -15,9 +15,39 @@ const martianMono = Martian_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DevEvent",
-  description: "The Hub for Every Dev Event You Mustn't Miss",
+    title: {
+        default: "Dev Events | Find Developer Events Worldwide",
+        template: "%s | Dev Events"
+    },
+    description: "Discover hackathons, meetups, and tech conferences around the world. The hub for every developer event you can't miss!",
+    keywords: ["developer events", "hackathons", "tech conferences", "meetups", "Dev Events"],
+    authors: [{ name: "Dev Events Team", url: "https://dev-events-nine.vercel.app" }],
+    openGraph: {
+        title: "Dev Events | Discover Global Developer Events",
+        description: "All the best hackathons, meetups, and conferences in one place.",
+        url: "https://dev-events-nine.vercel.app",
+        siteName: "Dev Events",
+        images: [
+            {
+                url: "https://dev-events-nine.vercel.app/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "Dev Events Preview",
+            },
+        ],
+        locale: "en_US",
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Dev Events",
+        description: "Discover the best hackathons, meetups, and tech conferences.",
+        images: ["https://dev-events-nine.vercel.app/og-image.png"],
+    },
 };
+
+
+
 
 export default function RootLayout({
   children,
