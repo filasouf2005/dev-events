@@ -59,7 +59,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" >
+        <head><meta name="google-site-verification" content="kynhGmIFTSihArrRzcNS_tNPffELT072HJ8u44Sacg0" /></head>
       <body
         className={`${schibstedGrotesk.variable} ${martianMono.variable} min-h-screen antialiased`}
       >
